@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World Today — Friday 27 November 2026</title>
+<style>
+  /* Vertical budget (must stay at or under 1024px total):
+     masthead ~110 + stripe 8 + strapline ~28 + lead ~285
+     + grid 526 (two 250px rows) + footer ~41 = ~998px. */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body { font-family: Georgia, 'DejaVu Serif', serif; background: #f7f3ea; color: #141414; }
+
+  /* --- masthead --- */
+  .top { background: #16324f; color: #ffffff; text-align: center; padding: 10px 20px 8px; }
+  .top h1 { font-size: 54px; letter-spacing: 2px; line-height: 1; }
+  .top .day { color: #c9a227; font-family: 'DejaVu Sans', sans-serif; font-weight: bold;
+    font-size: 30px; letter-spacing: 1px; margin-top: 8px; }
+  .stripe { height: 8px; background: #b02a30; }
+  .strapline { text-align: center; font-family: 'DejaVu Sans', sans-serif; font-size: 14px;
+    letter-spacing: 2px; color: #5a544a; padding: 8px 0 6px; }
+
+  /* --- lead story --- */
+  .main-story { margin: 6px 28px 0; background: #fffdf7; border: 2px solid #c8c0af;
+    border-top: 6px solid #b02a30; padding: 14px 22px 12px; position: relative; }
+  .eyebrow { font-family: 'DejaVu Sans', sans-serif; font-weight: bold; font-size: 14px;
+    color: #b02a30; letter-spacing: 1px; }
+  .main-story h2 { font-size: 44px; line-height: 1.08; margin: 6px 0 8px; }
+  .main-story p { font-family: 'DejaVu Sans', sans-serif; font-size: 19px;
+    line-height: 1.42; color: #222222; }
+  .main-story .detail { font-family: 'DejaVu Sans', sans-serif; font-weight: bold;
+    font-size: 15px; color: #16324f; margin-top: 10px; }
+  .drone-art { position: absolute; right: 26px; top: 64px; }
+
+  /* --- story grid --- */
+  .stories { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 14px 28px 0; }
+  .story { background: #fffdf7; border: 2px solid #c8c0af; border-top: 5px solid #16324f;
+    padding: 12px 14px 10px; height: 250px; }
+  .story .eyebrow { font-size: 13px; }
+  .story h3 { font-size: 23px; line-height: 1.15; margin: 8px 0 7px; }
+  .story p { font-family: 'DejaVu Sans', sans-serif; font-size: 15px;
+    line-height: 1.4; color: #222222; }
+  .digest { background: #16324f; color: #ffffff; border: 2px solid #16324f;
+    padding: 12px 14px 10px; height: 250px; }
+  .digest h3 { color: #c9a227; font-family: 'DejaVu Sans', sans-serif; font-size: 15px;
+    letter-spacing: 2px; margin-bottom: 8px; }
+  .digest li { font-family: 'DejaVu Sans', sans-serif; font-size: 12.5px; line-height: 1.3;
+    margin: 0 0 5px 16px; list-style: none; position: relative; }
+  .digest li::before { content: "\2022"; color: #c9a227; position: absolute; left: -14px; }
+
+  /* --- footer --- */
+  .bottom { background: #16324f; color: #ffffff; text-align: center;
+    font-family: 'DejaVu Sans', sans-serif; font-weight: bold; font-size: 15px;
+    padding: 8px 0; margin-top: 10px; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <h1>THE WORLD TODAY</h1>
+    <div class="day">Friday 27 November 2026</div>
+  </div>
+  <div class="stripe"></div>
+  <div class="strapline">THE DAY&rsquo;S NEWS &nbsp;&bull;&nbsp; SIX STORIES FROM AROUND THE GLOBE</div>
+
+  <div class="main-story">
+    <svg class="drone-art" width="120" height="70" viewBox="0 0 120 70">
+      <rect x="42" y="28" width="36" height="14" rx="6" fill="#16324f"/>
+      <circle cx="60" cy="35" r="5" fill="#b02a30"/>
+      <line x1="48" y1="32" x2="20" y2="16" stroke="#5a544a" stroke-width="3"/>
+      <line x1="72" y1="32" x2="100" y2="16" stroke="#5a544a" stroke-width="3"/>
+      <line x1="48" y1="38" x2="20" y2="54" stroke="#5a544a" stroke-width="3"/>
+      <line x1="72" y1="38" x2="100" y2="54" stroke="#5a544a" stroke-width="3"/>
+      <ellipse cx="20" cy="14" rx="14" ry="3" fill="#999999"/>
+      <ellipse cx="100" cy="14" rx="14" ry="3" fill="#999999"/>
+      <ellipse cx="20" cy="56" rx="14" ry="3" fill="#999999"/>
+      <ellipse cx="100" cy="56" rx="14" ry="3" fill="#999999"/>
+    </svg>
+    <div class="eyebrow">MIDDLE EAST &nbsp;&bull;&nbsp; LEAD STORY</div>
+    <h2>DRONES OVER KUWAIT<br>KILL TWO ITALIANS</h2>
+    <p>Two Italian technicians working on an air-defence station die after
+    drones blamed on Iran strike Kuwaiti military sites. Kuwait and Italy
+    blame Tehran; Iran denies any role and offers a joint inquiry.</p>
+    <div class="detail">Rome names the dead as Rheinmetall Italia staff &bull; Two more hurt &bull; EU urges more pressure on Iran</div>
+  </div>
+
+  <div class="stories">
+    <div class="story">
+      <div class="eyebrow">UNITED STATES</div>
+      <h3>STORM BLACKS OUT 900,000 ON THANKSGIVING</h3>
+      <p>A nor&rsquo;easter lashes the East Coast on Thanksgiving Day, cutting
+      power to about 900,000 people. The 100th Macy&rsquo;s parade moves to
+      Saturday &mdash; the first postponement in its history.</p>
+    </div>
+    <div class="story">
+      <div class="eyebrow">TRADE &amp; ECONOMY</div>
+      <h3>TRUMP SEEKS PROBE INTO &lsquo;FAKE&rsquo; GDP FIGURES</h3>
+      <p>The president demands an inquiry into US growth data after the
+      economy is reported to have grown 4.3%, a sharp upward revision he
+      calls false.</p>
+    </div>
+    <div class="story">
+      <div class="eyebrow">TECHNOLOGY</div>
+      <h3>MUSK: TWO SPACEX SHARES FOR EVERY US CHILD</h3>
+      <p>Elon Musk says every child in the United States will receive two
+      SpaceX shares, a commitment put at about $18 billion.</p>
+    </div>
+    <div class="story">
+      <div class="eyebrow">BRITAIN</div>
+      <h3>UK NET MIGRATION LOWEST SINCE 1997</h3>
+      <p>Net migration to Britain falls to its lowest level since 1997,
+      excluding the pandemic years, new figures show.</p>
+    </div>
+    <div class="story">
+      <div class="eyebrow">EGYPT</div>
+      <h3>CAIRO MOURNS 31 KILLED IN TANKER FIRE</h3>
+      <p>Egyptians demand accountability after the Ring Road tanker blaze
+      kills 31. Prosecutors say a suspect has been arrested.</p>
+    </div>
+    <div class="digest">
+      <h3>IN BRIEF</h3>
+      <ul>
+        <li>Bangkok refinery fire; Bangchak shuts units.</li>
+        <li>Ramaphosa wins court bid over impeachment.</li>
+        <li>Kim Jong Un vows to expand nuclear arsenal.</li>
+        <li>EU leaders discuss &euro;1.6 trillion budget.</li>
+        <li>Hamas weighs reply after Israel kills 10.</li>
+        <li>Depardieu to stand trial on rape charge.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bottom">Friday 27 November 2026 &nbsp;&bull;&nbsp; The World Today</div>
+</body>
+</html>
